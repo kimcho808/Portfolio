@@ -1,0 +1,15 @@
+:root {
+    /* 색상 */
+    --color-background:#111;
+
+    --color-main-v1:#D2F4FF;
+    --color-main-v2:#E889B5;
+    --color-main-v3:#BBBDE0;
+    --color-sub:#ccc;
+
+    /* 글자 */
+    --font-nav:1.375em;
+
+    /* 굵기 */
+    --font-weidht-m:500;
+}

@@ -1,0 +1,35 @@
+.wrap {
+    max-width:1920px; height:1080px;
+    position:relative; z-index: index 99;;
+}
+/* ------------------------------------------ 네비 */
+.wrap nav {
+    padding-top:60px;
+    width:100%;
+    display:flex; flex-flow:row nowrap;
+    gap:55px; justify-content:center;
+    position:absolute; z-index:999;
+    top:0; left:0;
+}
+.wrap nav a {
+    color:var(--color-sub);
+    font-size:var(--font-nav);
+}
+/* 슬라이드 시작 */
+.wrap .portfolio {}
+.wrap .portfolio .pofol_wrap {}
+.wrap .portfolio .pofol_wrap .pofol_slide1 {
+    width:100%;
+    background-color:var(--color-background);
+}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra {
+    width: 900px;
+    margin:0 auto;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {width:100%;}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_title {
+    width:528px; position:absolute; top:447px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_title img {width:100%;}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_mouse {}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {}
