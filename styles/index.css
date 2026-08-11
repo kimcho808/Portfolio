@@ -1,6 +1,6 @@
 .wrap {
     max-width:1920px; height:1080px;
-    position:relative; z-index: index 99;;
+    position:relative;
 }
 /* ------------------------------------------ 네비 */
 .wrap nav {
@@ -15,9 +15,20 @@
     color:var(--color-sub);
     font-size:var(--font-nav);
 }
+.wrap nav a::after {
+    content:''; display:block; position:absolute;
+    left:0; top:0; width:100%; height:100%;
+    color:var(--color-main-v2);
+    transform:scale(0);
+}
+/* 마우스 hover */
+.wrap nav a:hover::after {
+    transform:scale(1);
+}
 /* 슬라이드 시작 */
 .wrap .portfolio {}
 .wrap .portfolio .pofol_wrap {}
+/* --------------------------------------------------------- 인트로 */
 .wrap .portfolio .pofol_wrap .pofol_slide1 {
     width:100%;
     background-color:var(--color-background);
@@ -25,11 +36,29 @@
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra {
     width: 900px;
     margin:0 auto;
+    animation:graRotate 3s linear infinite;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {width:100%;}
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_title {
-    width:528px; position:absolute; top:447px;
+    width:528px; position:absolute; top:42%; left:50%;
+    transform:translateX(-50%);
 }
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_title img {width:100%;}
-.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_mouse {}
-.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_mouse {
+    width:50px; position:absolute;
+    bottom:8%; left:50%;
+    transform:translateX(-50%);
+    /* animation:mouseMove 2s linear infinite; */
+}
+.wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {width:100%;}
+/* ------------------------------------------------ 원 그라, 마우스 애니메이션 */
+/* 원 회전 */
+@keyframes graRotate {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+@keyframes mouseMove {
+    0% {transform:translateXY(0);}
+    100% {transform:translateY(10px);}
+}
+/* ----------------------------------------------------------------- 프로필 */
