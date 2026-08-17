@@ -27,16 +27,16 @@
 }
 /* 슬라이드 시작 */
 .wrap .portfolio {}
-.wrap .portfolio .pofol_wrap {}
+.wrap .portfolio .pofol_wrap {height:100vh;}
 /* --------------------------------------------------------- 인트로 */
 .wrap .portfolio .pofol_wrap .pofol_slide1 {
-    width:100%;
+    width:100%; height:100vh;
     background-color:var(--color-background);
 }
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra {
     width: 900px;
     margin:0 auto;
-    animation:graRotate 3s linear infinite;
+    animation:graRotate 2.5s linear infinite;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {width:100%;}
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_title {
@@ -48,7 +48,7 @@
     width:50px; position:absolute;
     bottom:8%; left:50%;
     transform:translateX(-50%);
-    /* animation:mouseMove 2s linear infinite; */
+    animation:mouseMove 2s linear infinite alternate;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {width:100%;}
 /* ------------------------------------------------ 원 그라, 마우스 애니메이션 */
@@ -58,7 +58,85 @@
     100% {transform:rotate(360deg);}
 }
 @keyframes mouseMove {
-    0% {transform:translateXY(0);}
-    100% {transform:translateY(10px);}
+    0% {transform:translateX(-50%) translateY(0);}
+    100% {transform:translateX(-50%) translateY(14px);}
 }
 /* ----------------------------------------------------------------- 프로필 */
+.wrap .portfolio .pofol_wrap .pofol_slide2 {
+    background-color:var(--color-background);
+    justify-content:center; align-items:center;
+    gap:120px; width:100%; height:100vh;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile {
+    justify-content:center;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile {
+    margin-bottom: 32px; position:relative;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile img:nth-child(1) {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile img:nth-child(2) {
+    position:absolute;
+    top:-25px; left:-40px; z-index:-1;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .name {
+    color: #fff;margin-bottom:26px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .name em {
+    color: #fff;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li {margin-bottom:14px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li:nth-child(4) {margin-bottom:0;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li .icon_img {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li .icon_img img {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li p:nth-child(2) {
+    color: #fff;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap > p {
+    color:#fff; margin-bottom:80px;
+    font-size:2em;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap > p em {
+    color:var(--color-main-v4);
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents {
+    gap:120px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education {
+    margin-bottom:50px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education h1 {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education .edu_content {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work h1 {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work .work_content {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate {
+    margin-bottom:50px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate h1 {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate .certi_content {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills h1 {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .skill-name {
+    color:#fff; margin-right:26px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .skill-bar {}
+/* 통일 */
+.wrap .portfolio .pofol_wrap .pofol_slide2 h1 {
+    margin-bottom:28px;
+    color:var(--color-main-v4);
+    font-size:1.625em;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .year {
+    color:var(--color-sub); margin-right:26px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .content {
+    color:#fff;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 li {
+    margin-bottom: 16px;
+}

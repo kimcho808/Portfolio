@@ -5,6 +5,7 @@
     --color-main-v1:#D2F4FF;
     --color-main-v2:#E889B5;
     --color-main-v3:#BBBDE0;
+    --color-main-v4:#E5ABC6;
     --color-sub:#ccc;
 
     /* 글자 */
@@ -12,4 +13,11 @@
 
     /* 굵기 */
     --font-weidht-m:500;
+}
+
+.flex_row_nowrap {
+    display:flex; flex-flow:row nowrap;
+}
+.flex_column_nowrap {
+    display:flex; flex-flow:column nowrap;
 }
