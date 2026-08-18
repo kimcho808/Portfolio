@@ -13,7 +13,7 @@ table,thead,tbody,tfoot,tr,td,th {
     font-weight:400;/* 피그마 글자 굵기 400 == regular */
     font-style:normal;
     color:#000;
-    font-family: 'pretanderd',sans-serif;
+    font-family: 'pretanderd', 'Butler', sans-serif;
 }
 /* 개별 태그 초기값 */
 a {text-decoration:none;}
@@ -37,3 +37,65 @@ input[type=number] {
     margin:0;
 }
 /* 웹글꼴 */
+/* 1. Light (가장 얇은 굵기) */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-Lgt.ttf);
+    font-weight: 300;
+}
+
+
+
+/* 2. Regular (일반 굵기) */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-Rmn.ttf);
+    font-weight: 400;
+}
+
+
+
+/* 3. Medium */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-Med.ttf);
+    font-weight: 500;}
+
+
+
+/* 4. SemiBold */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-SBd.ttf);
+    font-weight: 600;
+}
+
+/* 5. Bold */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-Bd.ttf);
+    font-weight: 700;
+}
+
+/* 6. ExtraBold */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-XBd.ttf);
+    font-weight: 800;
+}
+
+
+/* 7. Black (가장 두꺼운 굵기) */
+
+@font-face {
+    font-family: 'Butler';
+    src: url(../font/Butler-Free-Blk.ttf);
+    font-weight: 900;
+}
+

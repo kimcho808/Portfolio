@@ -12,6 +12,7 @@
     top:0; left:0;
 }
 .wrap nav a {
+    font-family:'pretanderd';
     color:var(--color-sub);
     font-size:var(--font-nav);
 }
@@ -48,7 +49,7 @@
     width:50px; position:absolute;
     bottom:8%; left:50%;
     transform:translateX(-50%);
-    animation:mouseMove 2s linear infinite alternate;
+    animation:mouseMove 1.5s linear infinite alternate;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide1 .intro_gra img {width:100%;}
 /* ------------------------------------------------ 원 그라, 마우스 애니메이션 */
@@ -69,9 +70,10 @@
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile {
     justify-content:center;
+    animation:downUp 1s linear;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile {
-    margin-bottom: 32px; position:relative;
+    margin-bottom: 26px; position:relative;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile img:nth-child(1) {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile img:nth-child(2) {
@@ -80,23 +82,28 @@
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .name {
-    color: #fff;margin-bottom:26px;
+    color: #fff; margin-bottom:26px;
+    font-size:1.75em;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .name em {
     color: #fff;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content {}
-.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li {margin-bottom:14px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li {
+    margin-bottom:14px;
+    display:flex; gap:16px;
+    align-items:center; 
+}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li:nth-child(4) {margin-bottom:0;}
-.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li .icon_img {}
-.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li .icon_img img {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li .icon_img {width:24px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li .icon_img img {width: 100%;}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li p:nth-child(2) {
-    color: #fff;
+    color: #fff; font-family:'pretanderd';
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap > p {
-    color:#fff; margin-bottom:80px;
-    font-size:2em;
+    color:#fff; margin-bottom:60px;
+    font-size:1.75em;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap > p em {
     color:var(--color-main-v4);
@@ -108,35 +115,76 @@
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education {
     margin-bottom:50px;
 }
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education li:nth-child(4) {
+    margin-bottom:0px; text-align:end; 
+}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education h1 {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education .edu_content {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work li:nth-child(2) {margin-bottom:0px;}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work h1 {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .work .work_content {}
-.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right {
+    width:410px;
+}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate {
     margin-bottom:50px;
 }
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate li:nth-child(3) {margin-bottom:0px;}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate h1 {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate .certi_content {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills li {
+    display:flex; align-items:center; justify-content:center;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills li:nth-child(7) {margin-bottom:0px;}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills h1 {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .skill-name {
-    color:#fff; margin-right:26px;
+    color:#fff; margin-right:26px; font-family:'pretanderd';
+    width:140px;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .skill-bar {}
-/* 통일 */
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .skill-bar {
+    width:100%; height:8px;
+    background-color:var(--color-sub);
+    border-radius:4px; overflow:hidden;
+    position: relative; z-index:10;
+}
+/* 스킬바 */
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .skill-bar::after {
+        content:''; display:block;
+    position:absolute;
+    top:0; left:0;
+    background-color:var(--color-main-v2);
+    height:100%; z-index:20;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .figma::after {width:50px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .photoshop::after {width:50px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .illustrator::after {width:50px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .html::after {width:50px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .css::after {width:50px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .javascript::after {width:50px;}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .skills .j-query::after {width:50px;}
+/* 통합 */
 .wrap .portfolio .pofol_wrap .pofol_slide2 h1 {
     margin-bottom:28px;
     color:var(--color-main-v4);
     font-size:1.625em;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .year {
-    color:var(--color-sub); margin-right:26px;
+    color:var(--color-sub); margin-right:22px;
+    font-family:'pretanderd';
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .content {
-    color:#fff;
+    color:#fff; font-family:'pretanderd';
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 li {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+    font-size:1.25em;
+    line-height:1.4em;
 }
+/* ------------------------------------------------------------------------------------------------- 애니메이션 */
+@keyframes downUp {
+    0% {transform:translateY(-100px); opacity:0;}
+    0% {transform:translateY(0); opacity:1;}
+}
+/* ------------------------------------------------------------------------------------------------- 3행 */
