@@ -4,7 +4,7 @@
 }
 /* ------------------------------------------ 네비 */
 .wrap nav {
-    padding-top:60px;
+    padding-top:50px;
     width:100%;
     display:flex; flex-flow:row nowrap;
     gap:55px; justify-content:center;
@@ -13,18 +13,12 @@
 }
 .wrap nav a {
     font-family:'pretanderd';
-    color:var(--color-sub);
+    color:#aaa;
     font-size:var(--font-nav);
 }
-.wrap nav a::after {
-    content:''; display:block; position:absolute;
-    left:0; top:0; width:100%; height:100%;
-    color:var(--color-main-v2);
-    transform:scale(0);
-}
 /* 마우스 hover */
-.wrap nav a:hover::after {
-    transform:scale(1);
+.wrap nav a:hover {
+    color:#fff;
 }
 /* 슬라이드 시작 */
 .wrap .portfolio {}
@@ -70,7 +64,12 @@
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile {
     justify-content:center;
-    animation:downUp 1s linear;
+    /* opacity:0; */
+    /* transform:translateY(100px); */
+}
+/* ----------------------------------------------- 좌측 그룹 애니메이션 */
+.wrap .portfolio .pofol_wrap .pofol_slide2.swiper-slide-active .photo_profile {
+    /* animation: downUp 1s ease-out forwards; */
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .Profile {
     margin-bottom: 26px; position:relative;
@@ -83,10 +82,12 @@
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .name {
     color: #fff; margin-bottom:26px;
-    font-size:1.75em;
+    font-family:'pretanderd';
+    font-size:1.7em;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .name em {
     color: #fff;
+    font-family:'Butler';
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li {
@@ -100,10 +101,15 @@
 .wrap .portfolio .pofol_wrap .pofol_slide2 .photo_profile .my_profile .my_content li p:nth-child(2) {
     color: #fff; font-family:'pretanderd';
 }
-.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap {}
+.wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap {
+    /* opacity:0;
+    transform:translateY(100px); */
+}
+/* ---------------------------------------------------- 우측 그룹 애니메이션 */
+.wrap .portfolio .pofol_wrap .pofol_slide2.swiper-slide-active .Profile_wrap {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap > p {
     color:#fff; margin-bottom:60px;
-    font-size:1.75em;
+    font-size:1.5em;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap > p em {
     color:var(--color-main-v4);
@@ -113,7 +119,7 @@
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left {}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education {
-    margin-bottom:50px;
+    margin-bottom:60px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_left .education li:nth-child(4) {
     margin-bottom:0px; text-align:end; 
@@ -128,7 +134,7 @@
     width:410px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate {
-    margin-bottom:50px;
+    margin-bottom:60px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate li:nth-child(3) {margin-bottom:0px;}
 .wrap .portfolio .pofol_wrap .pofol_slide2 .Profile_wrap .profile_contents .profile_contents_right .certificate h1 {}
@@ -173,9 +179,13 @@
 .wrap .portfolio .pofol_wrap .pofol_slide2 .year {
     color:var(--color-sub); margin-right:22px;
     font-family:'pretanderd';
+    font-size:1em;
+    font-weight:400;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 .content {
     color:#fff; font-family:'pretanderd';
+    font-size:1em;
+    font-weight:400;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide2 li {
     margin-bottom: 14px;
@@ -184,7 +194,54 @@
 }
 /* ------------------------------------------------------------------------------------------------- 애니메이션 */
 @keyframes downUp {
-    0% {transform:translateY(-100px); opacity:0;}
-    0% {transform:translateY(0); opacity:1;}
+    0% {transform:translateY(100px); opacity:0;}
+    100% {transform:translateY(0); opacity:1;}
 }
 /* ------------------------------------------------------------------------------------------------- 3행 */
+.wrap .portfolio .pofol_wrap .pofol_slide3 {
+    background-color:var(--color-background);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr {
+    width:1520px; display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3.swiper-slide-active .project_gr li {
+    animation: downUp 1s ease-out forwards;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3.swiper-slide-active .project_gr li:nth-child(1) { animation-delay: 0.2s; }
+.wrap .portfolio .pofol_wrap .pofol_slide3.swiper-slide-active .project_gr li:nth-child(2) { animation-delay: 0.5s; }
+.wrap .portfolio .pofol_wrap .pofol_slide3.swiper-slide-active .project_gr li:nth-child(3) { animation-delay: 0.8s; }
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_img {
+    width:440px; height:600px; overflow:hidden;
+    margin-bottom:20px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_img img {
+    width:108%;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_contents * {
+    color:#fff;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_contents {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:8px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_contents .Period {
+    font-family:'pretanderd';
+    font-size:1em;
+    line-height:1.4em;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_contents .project_name {font-size:2.625em;}
+.wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr li .project_contents .description {
+    font-family:'pretanderd';
+    font-size:1em;
+}
+/* ------------------------------------------------------------------------------------------------- 4행 */

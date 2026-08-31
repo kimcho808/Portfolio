@@ -2,6 +2,6 @@
 const portfolioSlide = new Swiper('.portfolio',{
     direction: 'vertical',
     mousewheel:{
-        invert:true,
+        invert:false,
     },
 })
