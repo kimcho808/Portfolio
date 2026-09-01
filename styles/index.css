@@ -477,7 +477,7 @@
     font-weight:300;
     display:block;
     margin-top:30px;
-    width:100%; text-align:center;
+    text-align:center;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide6 .project_img {}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .project_img img {width:100%;}
