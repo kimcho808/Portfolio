@@ -13,4 +13,4 @@ navLinks.forEach((link, index) => {
         e.preventDefault(); // <a> 태그의 기본 튕김 현상 막기
         portfolioSlide.slideTo(index); // portfolioSlide 변수를 사용해서 해당 번호로 이동!
     });
-});s
+});
