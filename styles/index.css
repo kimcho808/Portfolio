@@ -1,6 +1,4 @@
-.wrap {
-    max-width:1920px;
-}
+.wrap {}
 /* ------------------------------------------ 네비 */
 .wrap nav {
     padding-top:50px;
@@ -260,7 +258,7 @@
     justify-content:space-between;
     align-items:center;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g {}
+.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g {width:570px;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g > * {margin-bottom:30px;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_1 {}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_1 .brand_name {
@@ -275,7 +273,7 @@
     font-weight:500;
     margin-bottom:14px;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_1 .redesign {color:#fff;}
+.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_1 .redesign {color:#fff; line-height:1.4em;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_2 {
     padding:30px 0;
     border-top:1px solid #fff;
@@ -294,7 +292,7 @@
     gap:14px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 > * {
-    background-color:#fff; width:180px; height:74px;
+    background-color:#fff; width:180px; height:66px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -354,7 +352,7 @@
     font-weight:500;
     margin-bottom:14px;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_1 .redesign {color:#fff;}
+.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_1 .redesign {color:#fff; line-height:1.4em;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_2 {
     padding:30px 0;
     border-top:1px solid #fff;
@@ -373,7 +371,7 @@
     gap:14px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 > * {
-    background-color:#fff; width:180px; height:74px;
+    background-color:#fff; width:180px; height:66px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -433,7 +431,7 @@
     font-weight:500;
     margin-bottom:14px;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_1 .redesign {color:#fff;}
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_1 .redesign {color:#fff; line-height:1.4em;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_2 {
     padding:30px 0;
     border-top:1px solid #fff;
@@ -452,7 +450,7 @@
     gap:14px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > * {
-    background-color:#fff; width:180px; height:74px;
+    background-color:#fff; width:180px; height:66px;
     display:flex;
     justify-content:center;
     align-items:center;
