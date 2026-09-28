@@ -217,7 +217,7 @@
 }
 .wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr a .project_img:hover img {filter: grayscale(0%);}
 .wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr a .project_img img {
-    width:100%; filter: grayscale(50%);
+    width:100%; filter: grayscale(64%);
 }
 .wrap .portfolio .pofol_wrap .pofol_slide3 .project_gr a .project_contents * {
     color:#fff;
@@ -243,7 +243,7 @@
     font-weight:400;
 }
 /* ------------------------------------------------------------------------------------------------- 공통 */
-.wrap .portfolio .pofol_wrap .right_g {width:672px;}
+.wrap .portfolio .pofol_wrap .right_g {width:max-content;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .project_img,
 .wrap .portfolio .pofol_wrap .pofol_slide5 .project_img,
 .wrap .portfolio .pofol_wrap .pofol_slide6 .project_img {width:900px; min-width:700px;}
@@ -257,6 +257,7 @@
     display:flex;
     align-items:center;
 }
+.wrap .portfolio .pofol_wrap .pofol_slide4.swiper-slide-active .right_g {animation: downUp 0.7s linear forwards;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g * {position: relative; z-index:90;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g > * {margin-bottom:30px;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_1 {}
@@ -282,35 +283,24 @@
     display:flex; flex-flow:row nowrap; gap:16px;
     margin-bottom:0;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_2 li:nth-child(5) img {width:100%;}
+.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_2 li:nth-child(5) img {width:28px;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 {
     display:flex;
     margin-bottom:0;
     gap:14px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 > * {
-    background-color:#fff; width:100%; height:66px;
-    display:flex;
+    background-color:transparent; width:100%; padding:15px 0;
+    display:flex; border:1px solid #fff; color:#fff;
     justify-content:center;
     align-items:center;
     font-size:1.125em;
     font-weight:500;
     line-height:1.2em;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 > *:hover {background-color:var(--color-main-v2); color:#fff;}
+.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 > *:hover {background-color:#fff; color:#000;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .git {text-align:center;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma {display:flex; flex-flow:column nowrap; position: relative;}
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma .sub {
-    display:flex; position:absolute; top:74px;
-    display:none;
-}
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma:hover.sub {}
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma .sub > * {font-weight:300; font-size: 0.8em; padding:8px 11px;}
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma:hover .sub {
-    display:flex;
-}
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma .sub li {}
-.wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .figma .sub li a {color:#fff;}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .right_g_3 .proposal {}
 .wrap .portfolio .pofol_wrap .pofol_slide4 .right_g .site {
     color:var(--color-sub);
@@ -333,6 +323,7 @@
     justify-content:flex-end;
     align-items:center;
 }
+.wrap .portfolio .pofol_wrap .pofol_slide5.swiper-slide-active .right_g {animation: downUp 0.7s linear forwards;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g * {position: relative; z-index:90;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g {}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g > * {margin-bottom:30px;}
@@ -359,35 +350,24 @@
     display:flex; flex-flow:row nowrap; gap:16px;
     margin-bottom:0;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_2 li:nth-child(5) img {width:100%;}
+.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_2 li:nth-child(5) img {width:28px;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 {
     display:flex;
     margin-bottom:0;
     gap:14px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 > * {
-    background-color:#fff; width:100%; height:66px;
-    display:flex;
+    background-color:transparent; width:100%; padding:15px 0;
+    display:flex; color:#fff; border:1px solid #fff;
     justify-content:center;
     align-items:center;
     font-size:1.125em;
     font-weight:500;
     line-height:1.2em;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 > *:hover {background-color:var(--color-main-v2); color:#fff;}
+.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 > *:hover {background-color:#fff; color:#000;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .git {text-align:center;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma {display:flex; flex-flow:column nowrap; position: relative;}
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma .sub {
-    display:flex; position:absolute; top:74px;
-    display:none;
-}
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma:hover.sub {}
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma .sub > * {font-weight:300; font-size: 0.8em; padding:8px 11px;}
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma:hover .sub {
-    display:flex;
-}
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma .sub li {}
-.wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .figma .sub li a {color:#fff;}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .right_g_3 .proposal {}
 .wrap .portfolio .pofol_wrap .pofol_slide5 .right_g .site {
     color:var(--color-sub);
@@ -409,6 +389,7 @@
     display:flex;
     align-items:center;
 }
+.wrap .portfolio .pofol_wrap .pofol_slide6.swiper-slide-active .right_g {animation: downUp 0.7s linear forwards;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g * {position: relative; z-index:90;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g {}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g > * {margin-bottom:30px;}
@@ -435,35 +416,24 @@
     display:flex; flex-flow:row nowrap; gap:16px;
     margin-bottom:0;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_2 li:nth-child(5) img {width:100%;}
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_2 li:nth-child(5) img {width:28px;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 {
     display:flex;
     margin-bottom:0;
     gap:14px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > * {
-    background-color:#fff; width:100%; height:66px;
-    display:flex;
+    background-color:transparent; width:100%; padding:15px 0;
+    display:flex; color:#fff; border:1px solid #fff;
     justify-content:center;
     align-items:center;
     font-size:1.125em;
     font-weight:500;
     line-height:1.2em;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > *:hover {background-color:var(--color-main-v2); color:#fff;}
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > *:hover {background-color:#fff; color:#000;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .git {text-align:center;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma {display:flex; flex-flow:column nowrap; position: relative;}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma .sub {
-    display:flex; position:absolute; top:74px;
-    display:none;
-}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma:hover.sub {}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma .sub > * {font-weight:300; font-size: 0.8em; padding:8px 11px;}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma:hover .sub {
-    display:flex;
-}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma .sub li {}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma .sub li a {color:#fff;}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .proposal {}
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .site {
     color:var(--color-sub);
