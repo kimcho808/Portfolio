@@ -420,7 +420,7 @@
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 {
     display:flex;
     margin-bottom:0;
-    gap:14px;
+    gap:12px;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > * {
     background-color:transparent; width:100%; padding:15px 0;
@@ -431,10 +431,12 @@
     font-weight:500;
     line-height:1.2em;
 }
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > *:hover {background-color:#fff; color:#000;}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .git {text-align:center;}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma {display:flex; flex-flow:column nowrap; position: relative;}
-.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .proposal {}
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > .figma:hover {background-color:#fff; color:#000;}
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 > .figma:hover em {color:#000;}
+/* .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .git {text-align:center;} */
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma {display:flex; flex-flow:column nowrap; position: relative; line-height:1.4em;}
+.wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .figma em {color:#fff; font-size:0.875rem; font-weight:300;}
+/* .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .right_g_3 .proposal {} */
 .wrap .portfolio .pofol_wrap .pofol_slide6 .right_g .site {
     color:var(--color-sub);
     font-size:0.875em;
@@ -450,13 +452,26 @@
     background: var(--color-background);
     display: flex;
     flex-direction: column;
-    align-items: center; position:relative;
+    align-items: center; position:relative; padding:0 18px;
+}
+.wrap .portfolio .pofol_wrap .pofol_slide7 .back_ground {
+    background:rgba(0, 0, 0, 0.6); position:absolute; top:0; left:0; width:100%; height:100%;
+    z-index:90; display:none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.pofol_slide7 .back_ground img {
+    width: auto;
+    height: 65vh;
+    max-width: 80vw;
+    object-fit: contain;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide7 p:nth-child(1) {color: #fff; padding-top:210px; margin-bottom:30px;}
 .wrap .portfolio .pofol_wrap .pofol_slide7 .poster_mouse {position:absolute; right:41.5%; top:22.5%;}
 .wrap .portfolio .pofol_wrap .pofol_slide7 p em {color: var(--color-main-v2);}
 .wrap .portfolio .pofol_wrap .pofol_slide7 .poster_wrap {
-    width: 100%; height: 556px;
+    width: 100%; height: 556px; z-index:80;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide7 .poster_wrap .swiper-slide { height: 556px;}
 .wrap .portfolio .pofol_wrap .pofol_slide7 .poster_wrap .swiper-slide img {

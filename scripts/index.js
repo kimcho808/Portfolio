@@ -40,4 +40,19 @@ projectLinks.forEach((link) => {
 });
 
 //포스터 누르면 크게 볼 수 있도록
-const poster = document.querySelectorAll('.swiper-slide img');
+const poster = document.querySelectorAll('.pofol_slide7 .swiper-slide img');
+const imgBg = document.querySelector('.pofol_slide7 .back_ground');
+
+poster.forEach((img) => {
+    img.addEventListener('click', () => {
+        const bigImg = document.createElement('img');
+        bigImg.src = img.src;
+        imgBg.innerHTML = '';
+        imgBg.appendChild(bigImg);
+        imgBg.style.display = 'flex';
+    });
+});
+
+imgBg.addEventListener('click', () => {
+    imgBg.style.display = 'none';
+});
