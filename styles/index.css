@@ -478,7 +478,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; filter:grayscale(80%);
+    display: block; filter:grayscale(80%); cursor: pointer;
 }
 .wrap .portfolio .pofol_wrap .pofol_slide7 .poster_wrap .swiper-slide img:hover {filter:grayscale(0%);}
 /* ------------------------------------------------------------------------------------------------- 마지막 */
